@@ -3,11 +3,10 @@ class Mahasiswa:
         self.nama = nama
         self.nim = nim
 
-    def tampilkan_data(self):
-        print(f"Nama: {self.nama}, NIM: {self.nim}")
-
+    def __str__(self):
+        return(f"Nama: {self.nama}, NIM: {self.nim}")
 
 mhs1 = Mahasiswa("Andi", "123")
-mhs1.tampilkan_data()
+print(mhs1)
 # print(mhs1.nama)
 # print(mhs1.nim)
